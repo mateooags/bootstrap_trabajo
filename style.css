@@ -1,0 +1,255 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cuerpo y fondo */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f4f6; /* Fondo gris suave */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Barra de navegación */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    color: #5c6bc0; /* Azul suave */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 25px;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    color: #5c6bc0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #81c784; /* Verde suave */
+    transform: scale(1.1);
+  }
+  
+  /* Sección Principal (Historia) */
+  section#historia {
+    padding: 100px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  section#historia h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #5c6bc0; /* Azul suave */
+  }
+  
+  section#historia p {
+    font-size: 1.2rem;
+    color: #555; /* Gris suave */
+    line-height: 1.8;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Sección de Herramientas de IA */
+  #herramientas {
+    background-color: #f3f4f6; /* Fondo gris claro */
+    padding: 80px 20px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    background: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #5c6bc0; /* Azul suave */
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    color: #777; /* Gris oscuro */
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background: #81c784; /* Verde suave */
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #66bb6a; /* Verde más oscuro */
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  
+  /* Detalles de las herramientas */
+  section[id*="openai"],
+  section[id*="tensorflow"],
+  section[id*="watson"] {
+    padding: 50px 20px;
+    background: #ffffff; /* Fondo blanco */
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: #333;
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section[id*="openai"] h3,
+  section[id*="tensorflow"] h3,
+  section[id*="watson"] h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5c6bc0; /* Azul suave */
+    margin-bottom: 20px;
+  }
+  
+  section[id*="openai"] p,
+  section[id*="tensorflow"] p,
+  section[id*="watson"] p {
+    font-size: 1.2rem;
+    color: #555; /* Gris suave */
+    line-height: 1.8;
+  }
+  
+  /* Sección de Contacto */
+  #contacto {
+    padding: 40px 20px;
+    background-color: #f3f4f6; /* Fondo gris suave */
+    color: #333;
+    text-align: center;
+  }
+  
+  #contacto p {
+    font-size: 1.3rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Animación para los botones */
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Media Queries para dispositivos pequeños */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.8rem;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 15px;
+    }
+  
+    section#historia h2 {
+      font-size: 2.3rem;
+    }
+  
+    .card-title {
+      font-size: 1.4rem;
+    }
+  
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+  
